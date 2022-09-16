@@ -6,7 +6,11 @@
 
     <groupId>com.powernode.shop</groupId>
     <artifactId>power-shop</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>iaas</module>
+    </modules>
 
     <properties>
         <!-- 版本控制  druid mybatis-plus admin  fastjson  hutool  swaggerui  fastdfs  -->
@@ -83,10 +87,10 @@
                 <scope>import</scope>
             </dependency>
             <!--  引入druid starter-->
-           <!-- <dependency>
+            <!--<dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
-                <version>1.2.4</version>
+                <version>${druid.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>
