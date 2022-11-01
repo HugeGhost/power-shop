@@ -29,6 +29,11 @@
 
     <!-- 全局依赖 lombok hutool  fastJson   mybatis  注解相关的依赖  @TableField  -->
     <dependencies>
+        <!--健康检查-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
